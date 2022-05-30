@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>UsersCRUD - Lista użytkowników</title>
 
     <!-- Custom fonts for this template-->
     <link href="<c:url value="/theme/vendor/fontawesome-free/css/all.min.css"/>" rel="stylesheet" type="text/css">
@@ -33,7 +33,7 @@
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                class="fas fa-download fa-sm text-white-50"></i>Dodaj użytkownika</a>
+                class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
     </div>
 
     <!-- DataTales Example -->
@@ -53,19 +53,23 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>Tiger Nixon</td>
-                        <td>System Architect</td>
-                        <td>Edinburgh</td>
-                        <td>61</td>
-                    </tr>
+                    <c:forEach var="user" items="${users}">
+                        <tr>
+                            <td>${user.id}</td>
+                            <td>${user.userName}</td>
+                            <td>${user.email}</td>
+                            <td>
+                                <a href="#">Usuń</a>
+                                <a href="#">Edit</a>
+                                <a href="#">Pokaż</a>
+                            </td>
+                        </tr>
+                    </c:forEach>
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
-
-</div>
 <!-- /.container-fluid -->
 
 <jsp:include page="/footer.jsp"/>
