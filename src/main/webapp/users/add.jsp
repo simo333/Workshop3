@@ -41,21 +41,36 @@
             <h6 class="m-0 font-weight-bold text-primary">Dodaj użytkownika</h6>
         </div>
         <div class="card-body">
-            <form action="add.jsp" method="POST">
-                <label type="text" for="username">Nazwa</label><br>
-                <input class="form-control" type="text" name="username" id="username"><br>
-                <label type="text" for="email">Email</label><br>
-                <input class="form-control" type="email" name="email" id="email"><br>
-                <label type="text" for="password">Hasło</label><br>
-                <input class="form-control" type="password" name="password" id="password"><br>
+            <form method="POST">
+                <div class="form-group">
+                    <label type="text" for="username">Nazwa</label><br>
+                    <input class="form-control" type="text" name="username" id="username">
+                    <c:if test="${not empty usernameError}">
+                        <span class="px-2 mb-2 bg-danger text-white rounded">${usernameError}</span><br>
+                    </c:if>
+                </div>
+                <div class="form-group">
+                    <label type="text" for="email">Email</label><br>
+                    <input class="form-control" type="email" name="email" id="email">
+                    <c:if test="${not empty emailError}">
+                        <span class="px-2 mb-2 bg-danger text-white rounded">${emailError}<br></span>
+                    </c:if>
+                </div>
+                <div class="form-group">
+                    <label type="text" for="password">Hasło</label><br>
+                    <input class="form-control" type="password" name="password" id="password">
+                    <c:if test="${not empty passwordError}">
+                        <span class="px-2 mb-2 bg-danger text-white rounded">${passwordError}<br>
+                    </c:if>
+                </div>
                 <input class="btn btn-primary" type="submit" value="Zapisz">
             </form>
         </div>
     </div>
 </div>
-    <!-- /.container-fluid -->
+<!-- /.container-fluid -->
 
-    <jsp:include page="/footer.jsp"/>
+<jsp:include page="/footer.jsp"/>
 </body>
 
 </html>
