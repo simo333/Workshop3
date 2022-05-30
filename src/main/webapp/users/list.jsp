@@ -70,6 +70,7 @@
             </div>
         </div>
     </div>
+</div>
 <!-- /.container-fluid -->
 
 <jsp:include page="/footer.jsp"/>

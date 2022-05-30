@@ -27,26 +27,35 @@
 <body>
 <jsp:include page="/header.jsp"/>
 
-<!-- DataTales Example -->
-<div class="card shadow mb-4">
-    <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">Dodaj użytkownika</h6>
+<!-- Begin Page Content -->
+<div class="container-fluid">
+    <!-- Page Heading -->
+    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
+        <a href="<c:url value="/user/list"/> " class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                class="fas fa-download fa-sm text-white-50"></i> Lista użytkowników</a>
     </div>
-    <div class="card-body">
-        <form action="add.jsp" method="POST">
-            <label type="text"  for="username">Nazwa</label><br>
-            <input class="form-control" type="text" name="username" id="username"><br>
-            <label type="text"  for="email">Email</label><br>
-            <input class="form-control" type="email" name="email" id="email"><br>
-            <label type="text"  for="password">Hasło</label><br>
-            <input class="form-control" type="password" name="password" id="password"><br>
-            <input class="btn btn-primary" type="submit" value="Zapisz">
-        </form>
+    <!-- Form -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Dodaj użytkownika</h6>
+        </div>
+        <div class="card-body">
+            <form action="add.jsp" method="POST">
+                <label type="text" for="username">Nazwa</label><br>
+                <input class="form-control" type="text" name="username" id="username"><br>
+                <label type="text" for="email">Email</label><br>
+                <input class="form-control" type="email" name="email" id="email"><br>
+                <label type="text" for="password">Hasło</label><br>
+                <input class="form-control" type="password" name="password" id="password"><br>
+                <input class="btn btn-primary" type="submit" value="Zapisz">
+            </form>
+        </div>
     </div>
 </div>
-<!-- /.container-fluid -->
+    <!-- /.container-fluid -->
 
-<jsp:include page="/footer.jsp"/>
+    <jsp:include page="/footer.jsp"/>
 </body>
 
 </html>
