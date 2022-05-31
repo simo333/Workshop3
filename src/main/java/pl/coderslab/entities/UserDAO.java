@@ -13,8 +13,10 @@ public class UserDAO {
     private static final String READ_USER_QUERY = "SELECT * FROM users WHERE id = ?";
     private static final String UPDATE_USER_QUERY =
             "UPDATE users SET username = ?, email = ?, password = ? WHERE id = ?";
-    private static final String DELETE_USER_QUERY = "DELETE FROM users WHERE id = ?";
+    private static final String DELETE_USER_QUERY = "DELETE FROM userós WHERE id = ?";
     private static final String FIND_ALL_USERS_QUERY = "SELECT * FROM users";
+
+    private static final String FIND_USER_BY_EMAIL = "SELECT * FROM users WHERE email = ?";
 
     public User create(User user) {
         try (Connection conn = DbUtil.getConnection()) {
@@ -110,6 +112,21 @@ public class UserDAO {
             e.printStackTrace();
             return users;
         }
+    }
+
+    public boolean findByEmail(User user) {
+        try (Connection conn = DbUtil.getConnection();
+             PreparedStatement statement = conn.prepareStatement(FIND_USER_BY_EMAIL)) {
+            statement.setString(1, user.getEmail());
+            try (ResultSet resultSet = statement.executeQuery()) {
+                if (resultSet.next()) {
+                    return true;
+                }
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
     }
 
     public String hashPassword(String password) {
