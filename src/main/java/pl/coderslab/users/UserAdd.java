@@ -31,9 +31,15 @@ public class UserAdd extends HttpServlet {
             newUser.setUserName(username);
             newUser.setEmail(email);
             newUser.setPassword(password);
-            new UserDAO().create(newUser);
-            response.sendRedirect("/user/list");
-        } else {
+            UserDAO userDAO = new UserDAO();
+            if (!userDAO.findByEmail(newUser)) {
+                userDAO.create(newUser);
+                response.sendRedirect("/user/list");
+            } else {
+                request.setAttribute("emailError", "Ten email jest już zajęty.");
+            }
+        }
+        if (!response.isCommitted()) {
             getServletContext().getRequestDispatcher("/users/add.jsp")
                     .forward(request, response);
         }
@@ -48,10 +54,14 @@ public class UserAdd extends HttpServlet {
         if (username.equals("")) {
             request.setAttribute("usernameError", "Pole 'Nazwa' nie może być puste.");
             isValid = false;
+        } else {
+            request.setAttribute("usernameField", username);
         }
         if (email.equals("")) {
             request.setAttribute("emailError", "Pole 'Email' nie może być puste.");
             isValid = false;
+        } else {
+            request.setAttribute("emailField", email);
         }
         if (password.equals("")) {
             request.setAttribute("passwordError", "Pole 'Hasło' nie może być puste.");
