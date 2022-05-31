@@ -19,6 +19,7 @@
       <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="develop" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -183,7 +184,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653838276028</updated>
-      <workItem from="1653838277691" duration="5371000" />
+      <workItem from="1653838277691" duration="14573000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1653838582596</created>
@@ -244,5 +245,8 @@
     <MESSAGE value="UserAdd&#10;Front-end - minor fixes" />
     <MESSAGE value="UserAdd&#10;Added null form fields validation." />
     <option name="LAST_COMMIT_MESSAGE" value="UserAdd&#10;Added null form fields validation." />
+    <MESSAGE value="Reorganizing web template" />
+    <MESSAGE value="Preparing pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparing pages" />
   </component>
 </project>
