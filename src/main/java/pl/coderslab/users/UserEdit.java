@@ -9,6 +9,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "UserEdit", value = "/user/edit")
@@ -19,12 +20,16 @@ public class UserEdit extends HttpServlet {
         try {
             int userId = Integer.parseInt(request.getParameter("id"));
             User user = userDAO.read(userId);
-            request.setAttribute("user", user);
-        } catch (NumberFormatException e) {
+            request.getSession().setAttribute("user", user);
+            request.setAttribute("usernameField", user.getUserName());
+            request.setAttribute("emailField", user.getEmail());
+        } catch (NumberFormatException | NullPointerException e) {
             response.sendError(404);
         }
-        getServletContext().getRequestDispatcher("/users/edit.jsp")
-                .forward(request, response);
+        if (!response.isCommitted()) {
+            getServletContext().getRequestDispatcher("/users/edit.jsp")
+                    .forward(request, response);
+        }
     }
 
     @Override
@@ -32,14 +37,16 @@ public class UserEdit extends HttpServlet {
         String username = request.getParameter("username");
         String email = request.getParameter("email");
         String password = request.getParameter("password");
-
         if (UserFormValidator.validateForm(request)) {
             User editUser = new User();
+            HttpSession session = request.getSession();
+            User oldUser = (User) session.getAttribute("user");
+            editUser.setId(oldUser.getId());
             editUser.setUserName(username);
             editUser.setEmail(email);
             editUser.setPassword(password);
             UserDAO userDAO = new UserDAO();
-            if (!userDAO.findByEmail(editUser)) {
+            if (email.equals(oldUser.getEmail()) || !userDAO.findByEmail(editUser)) {
                 userDAO.update(editUser);
                 response.sendRedirect("/user/list");
             } else {
@@ -51,6 +58,4 @@ public class UserEdit extends HttpServlet {
                     .forward(request, response);
         }
     }
-
-
 }
