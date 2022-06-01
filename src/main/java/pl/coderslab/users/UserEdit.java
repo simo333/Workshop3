@@ -46,7 +46,7 @@ public class UserEdit extends HttpServlet {
             editUser.setEmail(email);
             editUser.setPassword(password);
             UserDAO userDAO = new UserDAO();
-            if (email.equals(oldUser.getEmail()) || !userDAO.findByEmail(editUser)) {
+            if (email.equals(oldUser.getEmail()) || !userDAO.existsByEmail(editUser)) {
                 userDAO.update(editUser);
                 response.sendRedirect("/user/list");
             } else {

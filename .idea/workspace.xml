@@ -10,9 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="Added page 404&#10;Edit page - in progress">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/details.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/SimoPc/IdeaProjects/Workshop3/src/main/webapp",
+    "last_opened_file_path": "C:/Users/SimoPc/IdeaProjects/Workshop3/src/main/webapp/users",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.34450868"
@@ -70,8 +75,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\users" />
+      <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\theme" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\java\pl\coderslab\entities" />
     </key>
@@ -263,15 +268,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="Added page 404&#10;Edit page - in progress" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
         <watch expression="editUser" />

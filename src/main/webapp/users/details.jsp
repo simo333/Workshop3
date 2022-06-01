@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>UsersCRUD - Lista użytkowników</title>
+    <title>UsersCRUD - Szczegóły użytkownika</title>
 
     <!-- Custom fonts for this template-->
     <link href="<c:url value="/theme/vendor/fontawesome-free/css/all.min.css"/>" rel="stylesheet" type="text/css">
@@ -32,39 +32,31 @@
     <!-- Page Heading -->
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">UsersCRUD</h1>
-        <a href="<c:url value="/user/add"/> " class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                class="fas fa-download fa-sm text-white-50"></i> Dodaj użytkownika</a>
+        <a href="<c:url value="/user/list"/>" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                class="fas fa-download fa-sm text-white-50"></i> Lista użytkowników</a>
     </div>
-
-    <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Lista użytkowników</h6>
+            <h6 class="m-0 font-weight-bold text-primary">Szczegóły użytkownika</h6>
         </div>
         <div class="card-body">
             <div class="table-responsive">
                 <table class="table" id="dataTable" width="100%" cellspacing="0">
-                    <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nazwa użytkownika</th>
-                        <th>Email</th>
-                        <th>Akcja</th>
-                    </tr>
-                    </thead>
                     <tbody>
-                    <c:forEach var="user" items="${users}">
-                        <tr>
-                            <td>${user.id}</td>
-                            <td>${user.userName}</td>
-                            <td>${user.email}</td>
-                            <td>
-                                <a href="#">Usuń</a>
-                                <a href="<c:url value="/user/edit?id=${user.id}"/>">Edit</a>
-                                <a href="<c:url value="/user/details?id=${user.id}"/>">Pokaż</a>
-                            </td>
-                        </tr>
-                    </c:forEach>
+                    <tr>
+                        <th class="w-50">Id</th>
+                        <td>${userId}</td>
+
+                    </tr>
+                    <tr>
+                        <th>Nazwa użytkownika</th>
+                        <td>${usernameField}</td>
+
+                    </tr>
+                    <tr>
+                        <th>Email</th>
+                        <td>${emailField}</td>
+                    </tr>
                     </tbody>
                 </table>
             </div>

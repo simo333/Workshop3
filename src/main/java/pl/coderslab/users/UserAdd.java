@@ -31,7 +31,7 @@ public class UserAdd extends HttpServlet {
             newUser.setEmail(email);
             newUser.setPassword(password);
             UserDAO userDAO = new UserDAO();
-            if (!userDAO.findByEmail(newUser)) {
+            if (!userDAO.existsByEmail(newUser)) {
                 userDAO.create(newUser);
                 response.sendRedirect("/user/list");
             } else {
