@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
 
@@ -60,7 +60,7 @@
                             <td>${user.email}</td>
                             <td>
                                 <a href="#">Usuń</a>
-                                <a href="#">Edit</a>
+                                <a href="<c:url value="/user/edit?id=${user.id}"/>">Edit</a>
                                 <a href="#">Pokaż</a>
                             </td>
                         </tr>

@@ -9,17 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="UserAdd&#10;Added null form fields validation.">
+    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="Added page 404&#10;Edit page - in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/dataTables.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" afterDir="false" />
-
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/SimoPc/IdeaProjects/Workshop3/src/main/webapp/theme",
+    "last_opened_file_path": "C:/Users/SimoPc/IdeaProjects/Workshop3/src/main/webapp",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.34450868"
@@ -77,12 +70,17 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp" />
+      <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\users" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\theme" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\java\pl\coderslab\entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\users" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.coderslab.users" />
     </key>
   </component>
   <component name="RunManager">
@@ -221,7 +219,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653933740278</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="UserEdit&#10;* Created UserEdit servlet and edit.jsp page.&#10;* Initial implementation&#10;* boolean formValidator(HttpServletRequest request) method moved to a new class UserFormValidator">
+      <created>1654059229799</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654059229799</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added page 404&#10;Edit page - in progress">
+      <created>1654098490241</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654098490241</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,9 +256,26 @@
     <MESSAGE value="UserAdd&#10;Front-end prepared" />
     <MESSAGE value="UserAdd&#10;Front-end - minor fixes" />
     <MESSAGE value="UserAdd&#10;Added null form fields validation." />
-    <option name="LAST_COMMIT_MESSAGE" value="UserAdd&#10;Added null form fields validation." />
     <MESSAGE value="Reorganizing web template" />
     <MESSAGE value="Preparing pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparing pages" />
+    <MESSAGE value="UserEdit&#10;* Created UserEdit servlet and edit.jsp page.&#10;* Initial implementation&#10;* boolean formValidator(HttpServletRequest request) method moved to a new class UserFormValidator" />
+    <MESSAGE value="Added page 404&#10;Edit page - in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added page 404&#10;Edit page - in progress" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="editUser" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
