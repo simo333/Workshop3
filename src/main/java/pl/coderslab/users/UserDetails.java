@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebServlet(name = "UserDetails", value = "/user/details")
+@WebServlet(name = "UserDetails", value = "/user/show")
 public class UserDetails extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -34,28 +34,5 @@ public class UserDetails extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        String username = request.getParameter("username");
-//        String email = request.getParameter("email");
-//        String password = request.getParameter("password");
-//        if (UserFormValidator.validateForm(request)) {
-//            User editUser = new User();
-//            HttpSession session = request.getSession();
-//            User oldUser = (User) session.getAttribute("user");
-//            editUser.setId(oldUser.getId());
-//            editUser.setUserName(username);
-//            editUser.setEmail(email);
-//            editUser.setPassword(password);
-//            UserDAO userDAO = new UserDAO();
-//            if (email.equals(oldUser.getEmail()) || !userDAO.existsByEmail(editUser)) {
-//                userDAO.update(editUser);
-//                response.sendRedirect("/user/list");
-//            } else {
-//                request.setAttribute("emailError", "Ten email jest już zajęty.");
-//            }
-//        }
-//        if (!response.isCommitted()) {
-//            getServletContext().getRequestDispatcher("/users/edit.jsp")
-//                    .forward(request, response);
-//        }
     }
 }

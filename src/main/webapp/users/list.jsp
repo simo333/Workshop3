@@ -61,7 +61,7 @@
                             <td>
                                 <a href="#">Usuń</a>
                                 <a href="<c:url value="/user/edit?id=${user.id}"/>">Edit</a>
-                                <a href="<c:url value="/user/details?id=${user.id}"/>">Pokaż</a>
+                                <a href="<c:url value="/user/show?id=${user.id}"/>">Pokaż</a>
                             </td>
                         </tr>
                     </c:forEach>
