@@ -11,13 +11,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "UserAdd", value = "/user/add")
-public class UserAdd extends HttpServlet {
+@WebServlet(name = "UserEdit", value = "/user/edit")
+public class UserEdit extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserDAO userDAO = new UserDAO();
         request.setAttribute("users", userDAO.findAll());
-        getServletContext().getRequestDispatcher("/users/add.jsp")
+        getServletContext().getRequestDispatcher("/users/edit.jsp")
                 .forward(request, response);
     }
 
@@ -28,22 +28,23 @@ public class UserAdd extends HttpServlet {
         String password = request.getParameter("password");
 
         if (UserFormValidator.validateForm(request)) {
-            User newUser = new User();
-            newUser.setUserName(username);
-            newUser.setEmail(email);
-            newUser.setPassword(password);
+            User editUser = new User();
+            editUser.setUserName(username);
+            editUser.setEmail(email);
+            editUser.setPassword(password);
             UserDAO userDAO = new UserDAO();
-            if (!userDAO.findByEmail(newUser)) {
-                userDAO.create(newUser);
+            if (!userDAO.findByEmail(editUser)) {
+                userDAO.update(editUser);
                 response.sendRedirect("/user/list");
             } else {
                 request.setAttribute("emailError", "Ten email jest już zajęty.");
             }
         }
         if (!response.isCommitted()) {
-            getServletContext().getRequestDispatcher("/users/add.jsp")
+            getServletContext().getRequestDispatcher("/users/edit.jsp")
                     .forward(request, response);
         }
-
     }
+
+
 }

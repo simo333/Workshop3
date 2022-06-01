@@ -9,17 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="UserAdd&#10;Added null form fields validation.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java" afterDir="false" />
+    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="UserAdd&#10;Added email duplication validation.&#10;Added error message display&#10;Added old user's input in field injection&#10;Completed.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/utils/UserFormValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/dataTables.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/dataTables.bootstrap4.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/theme/vendor/datatables/jquery.dataTables.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" afterDir="false" />
-
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -64,7 +58,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/SimoPc/IdeaProjects/Workshop3/src/main/webapp/theme",
+    "last_opened_file_path": "C:/Users/SimoPc/IdeaProjects/Workshop3/src/main/webapp/users",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.34450868"
@@ -77,12 +71,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\users" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\theme" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\java\pl\coderslab\entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\users" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pl.coderslab.users" />
     </key>
   </component>
   <component name="RunManager">
@@ -244,7 +242,6 @@
     <MESSAGE value="UserAdd&#10;Front-end prepared" />
     <MESSAGE value="UserAdd&#10;Front-end - minor fixes" />
     <MESSAGE value="UserAdd&#10;Added null form fields validation." />
-    <option name="LAST_COMMIT_MESSAGE" value="UserAdd&#10;Added null form fields validation." />
     <MESSAGE value="Reorganizing web template" />
     <MESSAGE value="Preparing pages" />
     <option name="LAST_COMMIT_MESSAGE" value="Preparing pages" />
