@@ -114,7 +114,7 @@ public class UserDAO {
         }
     }
 
-    public boolean findByEmail(User user) {
+    public boolean existsByEmail(User user) {
         try (Connection conn = DbUtil.getConnection();
              PreparedStatement statement = conn.prepareStatement(FIND_USER_BY_EMAIL)) {
             statement.setString(1, user.getEmail());
