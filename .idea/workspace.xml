@@ -9,11 +9,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="UserAdd&#10;Added email duplication validation.&#10;Added error message display&#10;Added old user's input in field injection&#10;Completed.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/utils/UserFormValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/users/edit.jsp" afterDir="false" />
+    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="UserEdit&#10;* Created UserEdit servlet and edit.jsp page.&#10;* Initial implementation&#10;* boolean formValidator(HttpServletRequest request) method moved to a new class UserFormValidator">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +62,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/SimoPc/IdeaProjects/Workshop3/src/main/webapp/users",
+    "last_opened_file_path": "C:/Users/SimoPc/IdeaProjects/Workshop3/src/main/webapp",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.34450868"
@@ -71,6 +75,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\users" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\theme" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\java\pl\coderslab\entities" />
@@ -219,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653933740278</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="UserEdit&#10;* Created UserEdit servlet and edit.jsp page.&#10;* Initial implementation&#10;* boolean formValidator(HttpServletRequest request) method moved to a new class UserFormValidator">
+      <created>1654059229799</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654059229799</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -244,6 +256,7 @@
     <MESSAGE value="UserAdd&#10;Added null form fields validation." />
     <MESSAGE value="Reorganizing web template" />
     <MESSAGE value="Preparing pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparing pages" />
+    <MESSAGE value="UserEdit&#10;* Created UserEdit servlet and edit.jsp page.&#10;* Initial implementation&#10;* boolean formValidator(HttpServletRequest request) method moved to a new class UserFormValidator" />
+    <option name="LAST_COMMIT_MESSAGE" value="UserEdit&#10;* Created UserEdit servlet and edit.jsp page.&#10;* Initial implementation&#10;* boolean formValidator(HttpServletRequest request) method moved to a new class UserFormValidator" />
   </component>
 </project>

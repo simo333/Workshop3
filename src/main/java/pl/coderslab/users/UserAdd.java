@@ -15,8 +15,6 @@ import java.io.IOException;
 public class UserAdd extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        UserDAO userDAO = new UserDAO();
-        request.setAttribute("users", userDAO.findAll());
         getServletContext().getRequestDispatcher("/users/add.jsp")
                 .forward(request, response);
     }

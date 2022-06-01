@@ -16,7 +16,13 @@ public class UserEdit extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         UserDAO userDAO = new UserDAO();
-        request.setAttribute("users", userDAO.findAll());
+        try {
+            int userId = Integer.parseInt(request.getParameter("id"));
+            User user = userDAO.read(userId);
+            request.setAttribute("user", user);
+        } catch (NumberFormatException e) {
+            response.sendError(404);
+        }
         getServletContext().getRequestDispatcher("/users/edit.jsp")
                 .forward(request, response);
     }
