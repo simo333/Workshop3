@@ -13,7 +13,7 @@ public class UserDAO {
     private static final String READ_USER_QUERY = "SELECT * FROM users WHERE id = ?";
     private static final String UPDATE_USER_QUERY =
             "UPDATE users SET username = ?, email = ?, password = ? WHERE id = ?";
-    private static final String DELETE_USER_QUERY = "DELETE FROM userós WHERE id = ?";
+    private static final String DELETE_USER_QUERY = "DELETE FROM users WHERE id = ?";
     private static final String FIND_ALL_USERS_QUERY = "SELECT * FROM users";
 
     private static final String FIND_USER_BY_EMAIL = "SELECT * FROM users WHERE email = ?";
