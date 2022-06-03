@@ -9,10 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="Minor bugs fixed">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDelete.java" afterDir="false" />
+    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/entities/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654113547456</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)">
+      <created>1654173707224</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654173707224</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +276,8 @@
     <MESSAGE value="UserEdit&#10;* Created UserEdit servlet and edit.jsp page.&#10;* Initial implementation&#10;* boolean formValidator(HttpServletRequest request) method moved to a new class UserFormValidator" />
     <MESSAGE value="Added page 404&#10;Edit page - in progress" />
     <MESSAGE value="Minor bugs fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor bugs fixed" />
+    <MESSAGE value="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

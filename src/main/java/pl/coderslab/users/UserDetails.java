@@ -2,14 +2,12 @@ package pl.coderslab.users;
 
 import pl.coderslab.entities.User;
 import pl.coderslab.entities.UserDAO;
-import pl.coderslab.utils.UserFormValidator;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 @WebServlet(name = "UserDetails", value = "/user/show")

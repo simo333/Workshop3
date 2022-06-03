@@ -3,7 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
 
     <meta charset="utf-8">
@@ -55,12 +54,13 @@
                     </thead>
                     <tbody>
                     <c:forEach var="user" items="${users}">
+
                         <tr>
                             <td>${user.id}</td>
                             <td>${user.userName}</td>
                             <td>${user.email}</td>
                             <td>
-<%--                                <a data-toggle="modal" data-target="#deleteModal">Usuń</a>--%>
+<%--                                <a href="#" data-toggle="modal" data-target="#deleteModal">Usuń</a>--%>
                                 <a href="<c:url value="/user/delete?id=${user.id}"/>">Usuń</a>
                                 <a href="<c:url value="/user/edit?id=${user.id}"/>">Edit</a>
                                 <a href="<c:url value="/user/show?id=${user.id}"/>">Pokaż</a>
@@ -75,27 +75,26 @@
 </div>
 <!-- /.container-fluid -->
 
-<jsp:include page="/footer.jsp"/>
-
 <%--<!-- Confirm Delete Modal-->--%>
 <%--<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"--%>
 <%--     aria-hidden="true">--%>
 <%--    <div class="modal-dialog" role="document">--%>
 <%--        <div class="modal-content">--%>
 <%--            <div class="modal-header">--%>
-<%--                <h5 class="modal-title" id="exampleModalLabel">Czy na pewno chcesz usunąć ${actualUser.username}?</h5>--%>
+<%--                <h5 class="modal-title" id="exampleModalLabel">Czy na pewno chcesz usunąć?</h5>--%>
 <%--                <button class="close" type="button" data-dismiss="modal" aria-label="Close">--%>
 <%--                    <span aria-hidden="true">×</span>--%>
 <%--                </button>--%>
 <%--            </div>--%>
-<%--            <div class="modal-body"></div>--%>
 <%--            <div class="modal-footer">--%>
 <%--                <button class="btn btn-secondary" type="button" data-dismiss="modal">Anuluj</button>--%>
-<%--                <a class="btn btn-primary" href="<c:url value="/user/delete?id=${actualUser.id}"/>">Usuń</a>--%>
+<%--                <a class="btn btn-primary" href="<c:url value="user/delete?="/>">Usuń</a>--%>
 <%--            </div>--%>
 <%--        </div>--%>
 <%--    </div>--%>
 <%--</div>--%>
+
+<jsp:include page="/footer.jsp"/>
 </body>
 
 </html>
