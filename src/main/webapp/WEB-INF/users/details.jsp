@@ -25,7 +25,7 @@
 </head>
 
 <body>
-<jsp:include page="/header.jsp"/>
+<jsp:include page="/WEB-INF/header.jsp"/>
 
 <!-- Begin Page Content -->
 <div class="container-fluid">
@@ -65,7 +65,7 @@
 </div>
 <!-- /.container-fluid -->
 
-<jsp:include page="/footer.jsp"/>
+<jsp:include page="/WEB-INF/footer.jsp"/>
 </body>
 
 </html>
