@@ -27,7 +27,7 @@ public class UserEdit extends HttpServlet {
             response.sendError(404);
         }
         if (!response.isCommitted()) {
-            getServletContext().getRequestDispatcher("/users/edit.jsp")
+            getServletContext().getRequestDispatcher("/WEB-INF/users/edit.jsp")
                     .forward(request, response);
         }
     }
@@ -54,7 +54,7 @@ public class UserEdit extends HttpServlet {
             }
         }
         if (!response.isCommitted()) {
-            getServletContext().getRequestDispatcher("/users/edit.jsp")
+            getServletContext().getRequestDispatcher("/WEB-INF/users/edit.jsp")
                     .forward(request, response);
         }
     }

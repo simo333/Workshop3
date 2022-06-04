@@ -25,7 +25,7 @@ public class UserDetails extends HttpServlet {
             response.sendError(404);
         }
         if (!response.isCommitted()) {
-            getServletContext().getRequestDispatcher("/users/details.jsp")
+            getServletContext().getRequestDispatcher("/WEB-INF/users/details.jsp")
                     .forward(request, response);
         }
     }

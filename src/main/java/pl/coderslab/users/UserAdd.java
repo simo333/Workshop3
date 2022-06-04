@@ -15,7 +15,7 @@ import java.io.IOException;
 public class UserAdd extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        getServletContext().getRequestDispatcher("/users/add.jsp")
+        getServletContext().getRequestDispatcher("/WEB-INF/users/add.jsp")
                 .forward(request, response);
     }
 
@@ -39,7 +39,7 @@ public class UserAdd extends HttpServlet {
             }
         }
         if (!response.isCommitted()) {
-            getServletContext().getRequestDispatcher("/users/add.jsp")
+            getServletContext().getRequestDispatcher("/WEB-INF/users/add.jsp")
                     .forward(request, response);
         }
 

@@ -9,11 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)">
+    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="Deleting user feature:&#10;Minor fixes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserAdd.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserEdit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/users/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/details.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/users/details.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/edit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/users/edit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/users/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +82,7 @@
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\java\pl\coderslab\entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\users" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp" />
     </key>
@@ -184,6 +190,8 @@
       <option name="presentableId" value="Default" />
       <updated>1653838276028</updated>
       <workItem from="1653838277691" duration="14573000" />
+      <workItem from="1654332255158" duration="82000" />
+      <workItem from="1654335444981" duration="1648000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1653838582596</created>
