@@ -9,3 +9,4 @@
 * MySQL,
 * DAO classes,
 * Maven
+* IntelliJ Idea
