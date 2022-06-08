@@ -28,19 +28,19 @@
 <body>
 <jsp:include page="/WEB-INF/header.jsp"/>
 
-                <!-- Begin Page Content -->
-                <div class="container-fluid">
+<!-- Begin Page Content -->
+<div class="container-fluid">
 
-                    <!-- 404 Error Text -->
-                    <div class="text-center">
-                        <div class="error mx-auto" data-text="404">404</div>
-                        <p class="lead text-gray-800 mb-5">Strona nie została znaleziona</p>
-                        <a href="<c:url value="/user/list"/>">&larr; Wróć do Dashboard</a>
-                    </div>
+    <!-- 404 Error Text -->
+    <div class="text-center">
+        <div class="error mx-auto" data-text="404">404</div>
+        <p class="lead text-gray-800 mb-5">Strona nie została znaleziona</p>
+        <a href="<c:url value="/user/list"/>">&larr; Wróć do Dashboard</a>
+    </div>
 
-                </div>
-                <!-- /.container-fluid -->
-    <jsp:include page="footer.jsp"/>
+</div>
+<!-- /.container-fluid -->
+<jsp:include page="footer.jsp"/>
 
 </body>
 
