@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)">
+    <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,13 +23,14 @@
       <list>
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -77,6 +76,7 @@
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\java\pl\coderslab\entities" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp\users" />
       <recent name="C:\Users\SimoPc\IdeaProjects\Workshop3\src\main\webapp" />
     </key>
@@ -184,6 +184,13 @@
       <option name="presentableId" value="Default" />
       <updated>1653838276028</updated>
       <workItem from="1653838277691" duration="14573000" />
+      <workItem from="1654332255158" duration="82000" />
+      <workItem from="1654335444981" duration="1672000" />
+      <workItem from="1654337171005" duration="2375000" />
+      <workItem from="1654355138338" duration="1200000" />
+      <workItem from="1654356650864" duration="37000" />
+      <workItem from="1654419727186" duration="847000" />
+      <workItem from="1655092474892" duration="8531000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1653838582596</created>
@@ -248,7 +255,21 @@
       <option name="project" value="LOCAL" />
       <updated>1654173707224</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Moved all .jsp pages to WEB-INF dir">
+      <created>1654337117819</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1654337117819</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Moved all .jsp pages to WEB-INF dir">
+      <created>1654356676879</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654356676879</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -277,7 +298,8 @@
     <MESSAGE value="Added page 404&#10;Edit page - in progress" />
     <MESSAGE value="Minor bugs fixed" />
     <MESSAGE value="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)" />
+    <MESSAGE value="Moved all .jsp pages to WEB-INF dir" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved all .jsp pages to WEB-INF dir" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
