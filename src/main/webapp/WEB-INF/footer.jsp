@@ -41,3 +41,6 @@
 
 <!-- Page level custom scripts -->
 <script src="<c:url value="/theme/js/demo/datatables-demo.js"/>"></script>
+
+<%-- Confirmation of deletion script --%>
+<script src="<c:url value="/theme/js/confirmation-of-deletion.js"/>"></script>
