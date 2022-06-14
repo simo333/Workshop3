@@ -10,7 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1866c098-a6ce-4c4c-8c5e-da7224e164d5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/coderslab/users/UserGetOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/theme/js/confirmation-of-deletion.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/footer.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/footer.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/users/list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +193,7 @@
       <workItem from="1654355138338" duration="1200000" />
       <workItem from="1654356650864" duration="37000" />
       <workItem from="1654419727186" duration="847000" />
-      <workItem from="1655092474892" duration="8531000" />
+      <workItem from="1655092474892" duration="10078000" />
     </task>
     <task id="LOCAL-00001" summary="Init commit">
       <created>1653838582596</created>
@@ -269,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654356676879</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Implementing confirmation of deletion.">
+      <created>1655215562937</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1655215562937</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +309,8 @@
     <MESSAGE value="Minor bugs fixed" />
     <MESSAGE value="Deleting user feature:&#10;added UserDelete servlet&#10;added link for deletion in list.jsp&#10;prepared for modal confirmation (for deletion)" />
     <MESSAGE value="Moved all .jsp pages to WEB-INF dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved all .jsp pages to WEB-INF dir" />
+    <MESSAGE value="Implementing confirmation of deletion." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementing confirmation of deletion." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

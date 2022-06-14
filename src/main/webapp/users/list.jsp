@@ -61,7 +61,6 @@
                             <td>${user.email}</td>
                             <td>
                                 <a href="#" data-toggle="modal" data-target="#deleteModal" id="userId" data-id="${user.id}">Usuń</a>
-                                <a href="<c:url value="/user/delete?id=${user.id}"/>">Usuń</a>
                                 <a href="<c:url value="/user/edit?id=${user.id}"/>">Edit</a>
                                 <a href="<c:url value="/user/show?id=${user.id}"/>">Pokaż</a>
                             </td>
@@ -96,21 +95,7 @@
 
 <jsp:include page="/footer.jsp"/>
 
-<script type="text/javascript">
-    const links = document.querySelectorAll("#userId");
-    const modalTitle = document.querySelector(".modal-title");
-    let id = 0;
-    links.forEach(function (a) {
-        a.addEventListener('click', function () {
-            id = a.dataset.id;
-            modalTitle.innerText = "Czy na pewno chcesz usunąć " + ${users['id'].name} + "?";
-        });
-    });
 
-    function redirect() {
-        window.location.replace('/user/delete?id=' + id);
-    }
-</script>
 </body>
 </html>
 
